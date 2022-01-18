@@ -1,3 +1,8 @@
+"""Convert AT&T format to graphviz (dot) format"""
+
+# Usage:
+# echo "d [ i | u ] g" | hfst-regexp2fst | hfst-fst2txt | python3 att2dot.py | dot -T png > /tmp/digdug.png
+
 import sys
 
 print('digraph G { rankdir="LR"')

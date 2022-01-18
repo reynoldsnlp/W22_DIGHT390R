@@ -1,3 +1,10 @@
+"""Convert lexc LEXICONs to graphviz (dot) format.
+(does not include language defined in each LEXICON)
+"""
+
+# Usage:
+# cat example.lexc | python3 lexc2dot.py | dot -T png > /tmp/example.png
+
 import sys
 
 g = {'#': []}  # graph/tree
