@@ -60,6 +60,13 @@ should be a lemma and tags.
 $ echo teach+V+Past | hfst-lookup first_generator.hfst
 ```
 
+## Visualize the transducer
+
+```bash
+$ cat lexicon.lexc | python3 lexc2dot.py | dot -T png > /tmp/lexc.png
+$ cat gen.hfst | hfst-fst2txt | python3 att2dot.py | dot -T png > /tmp/gen.png
+```
+
 ## GiellaLT
 
 See lecture notes from [this excellent
